@@ -1,0 +1,205 @@
+<html>
+<style>
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#wrapper{
+	min-width:1000px;
+}
+#Topper{
+  height:500px;
+  width:100%;         
+  background: url(mountains.png);
+  background-size: cover;
+  color: black;
+  margin:auto;
+}
+
+#Footer{
+   height:100px;
+  width:100%;         
+  background-color:black;
+  background-size: cover;
+  color: black;
+  margin:auto;
+  text-align:center;
+}
+
+#TopText{
+    text-transform: none;
+   font: 100 1.3em/1 'Raleway', sans-serif;
+    letter-spacing: .1em;
+    margin: 15px;
+    text-align:center;
+  margin: 75px;
+}
+
+#Quoted{
+font: 100 1em/1 'Raleway', sans-serif;
+   text-transform: uppercase;
+    letter-spacing: .1em;
+    margin: 20px;
+    text-align:center;
+  margin: 10px;
+}
+
+#initials{
+     font: 100 2em/1 'Raleway', sans-serif;
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    top: 25%;
+    width: 75px;
+    border-style: solid;
+    border-color: gray;
+    height: 75px;
+    text-align:center;
+    margin-top:10px;
+    margin-left: 10px;
+    line-height:75px;
+    display:inline-block;
+}
+
+.text{
+  text-align:left;
+  float:right;
+  width:100%;
+}
+
+.item{
+  width:100%;
+  height:400px;
+}
+img{
+  height: 270px;
+  width: 270px;
+  display:block;
+  margin:auto;
+  margin: 35px;
+  float:left;
+}
+
+#header{
+  width:100%;
+  height:100px;
+  -webkit-filter: opacity(100);
+  background-color:black; 
+  background-size: contain;
+  z-index: 1;
+  margin:0px;
+  padding:0px;
+}
+
+#Title{
+  display:inline-block;
+  color: white;
+  margin:auto;
+     font: 100 2em/1 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 25%;
+    width: 75px;
+    height: 75px;
+    text-align:center;
+    margin-left: 25px;
+}
+
+ #name{
+  margin:auto;
+     font: 100 1.2em/1 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    padding-top: 50px;
+    margin-bottom: 5px;
+}
+
+ #sub{
+  margin:auto;
+     font: 100 1.0em/1 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    padding-top: 15px;
+    margin-bottom: 35px;
+ 
+}
+
+
+p{
+
+     font: 100 1.5em/1 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin:50pxpx;
+    text-align:center;
+}
+
+li{
+     font: 100 .75em/1 'Raleway', sans-serif;
+    text-transform: none;
+    letter-spacing: .2em;
+    margin: 15px;
+    text-align:center;
+  
+}
+
+ul{
+  text-align:center;
+  list-style:none;
+}
+hr {
+    margin:auto;
+    padding:;
+    border-style:solid;
+    width:80%;
+    
+}
+
+
+</style>
+<body><div id="wrapper">
+  <div id="header">
+   <a href="index.html"> <div id="initials">JW</div></a>
+    <div id="Title">Projects</div>
+  </div>
+  <div id="Topper">
+   <ul>
+    <li id="TopText">"You have to be burning with an idea, or a problem, or a wrong that you want to right. If you're not passionate enough from the start, you'll never stick it out."</li>
+    <li id="Quoted">-Steve Jobs</li>
+   </ul> 
+</div>
+  <div class="item">
+  <div class="text">
+  <h5 id="name">Distracted Driving PSA</h5>
+<p><strong></strong></p>
+  <ul>
+	<li>This is a video I created to raise awareness towards the danger of texting while driving</li>
+	<li>Unfortunately, thousands are killed every year due to distracted driving.</li>
+	<li>But the good news is this problem is preventable, it just takes every person making safe decisions behind the wheel</li>
+ <video width="550" height="480" controls>
+  <source src="driving.m4v" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+    </div>
+    </div>
+  <hr></hr>
+
+<div class="item">
+<h5 id="name">More projects are coming soon</h5>
+</div>
+
+<div id="Footer"></div>
+</div></body>  
+
+
+</html>
