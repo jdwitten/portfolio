@@ -1,0 +1,201 @@
+<html>
+<style>
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#wrapper{
+	min-width:1000px;
+}
+#Topper{
+  height:500px;
+  width:100%;         
+  background:url(http://imagizer.imageshack.us/v2/1280x1024q90/910/iKPlL8.jpg);
+  background-size: cover;
+  color: black;
+  margin:auto;
+  display:flex;justify-content:center;align-items:center;
+}
+
+#Footer{
+   height:100px;
+  width:100%;         
+  background-color:black;
+  background-size: cover;
+  color: black;
+  margin:auto;
+  text-align:center;
+}
+
+#TopText{
+    text-transform: none;
+   font: 100 1.3em/1 'Raleway', sans-serif;
+    letter-spacing: .1em;
+    margin: 15px;
+    text-align:center;
+  margin: 20px;
+}
+
+#Quoted{
+font: 100 1em/1 'Raleway', sans-serif;
+   text-transform: uppercase;
+    letter-spacing: .1em;
+    margin: 20px;
+    text-align:center;
+  margin: 10px;
+}
+
+#initials{
+     font: 100 2em/1 'Raleway', sans-serif;
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    top: 25%;
+    width: 75px;
+    border-style: solid;
+    border-color: gray;
+    height: 75px;
+    text-align:center;
+    margin-top:10px;
+    margin-left: 10px;
+    line-height:75px;
+    display:inline-block;
+}
+
+.text{
+  text-align:left;
+  float:right;
+  width:66%;
+}
+
+.item{
+  width:100%;
+  height:400px;
+}
+img{
+  height: 270px;
+  width: 270px;
+  display:block;
+  margin:auto;
+  margin: 35px;
+  float:left;
+}
+
+#header{
+  width:100%;
+  height:100px;
+  -webkit-filter: opacity(100);
+  background-color:black; 
+  background-size: contain;
+  z-index: 1;
+  margin:0px;
+  padding:0px;
+}
+
+#Title{
+  display:inline-block;
+  color: white;
+  margin:auto;
+     font: 100 2em/1 'Raleway', sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 25%;
+    width: 75px;
+    height: 75px;
+    text-align:center;
+    margin-left: 25px;
+}
+
+ #name{
+  margin:auto;
+     font: 100 1.2em/1 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    padding-top: 50px;
+    margin-bottom: 5px;
+    margin-left: 400px;
+}
+
+ #sub{
+  margin:auto;
+     font: 100 1.0em/1 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    padding-top: 15px;
+    margin-bottom: 35px;
+ 
+}
+
+
+p{
+
+     font: 100 .75em/1 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin:0px;
+    text-align:center;
+}
+
+li{
+     font: 100 .75em/1 'Raleway', sans-serif;
+    text-transform: none;
+    letter-spacing: .2em;
+    margin: 15px;
+    text-align:center;
+    margin: 30px;
+  
+}
+
+ul{
+  text-align:center;
+}
+hr {
+    margin:auto;
+    padding:;
+    border-style:solid;
+    width:80%;
+    
+}
+
+#bottom{
+	width:100%;
+	height: 500px;
+	background: url(mountains.png);
+}
+
+
+</style>
+<body><div id="wrapper">
+  <div id="header">
+   <a href="index.html"> <div id="initials">JW</div></a>
+    <div id="Title">About</div>
+  </div>
+  <h5 id="name">Jonathan Witten</h5>
+  <img src="personal.jpg"></img>
+  <div class="item">
+  <div class="text">
+  <h5 id="name"></h5>
+  <ul>
+	<li>I am a junior computer science major at University of North Carolina at Chapel Hill</li>
+        <li>Some of my favorite extra curricular activities include club volleyball and other sporting events on campus</li>
+        <li>I have been a leader in the Wesley Campus Ministry for the past two years</li>
+	<li>The outdoors have always been a passion of mine, I love hiking, kayaking, etc.
+	<li>I enjoy learning discovering new ways to make technology solve difficult problems</li>
+        <li>GIS programming, and using technology to solve environmental problems have particular interest to me</li>
+	<li>My faith is an integral part of my life. Everyday I strive to serve others with Christ-like humility</li>  
+    </div>
+    </div>
+<div id="bottom"></div>
+</div></body>  
+
+
+</html>
