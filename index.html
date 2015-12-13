@@ -1,21 +1,130 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="homeStyle.css">
-</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script>
+	$(document).ready(function() {
+   $('.icon').mouseenter(function() {
+       $(this).animate({
+           height: '+=10px',width: '+=10px'
+       });
+	$(this).css("line-height","110px");
+		
+   });
+   $('.icon').mouseleave(function() {
+       $(this).animate({
+           height: '-=10px',width:'-=10px'
+       }); 
+       $(this).css("line-height","100px");
+   });
+   $('.icon').click(function() {
+       $(this).toggle(1000);
+   }); 
+});
 
-<body><div id="wrapper">
-  <div id="Top">
-    <div id= "border">
+</script>
+<style>
+
+body{
+  background:url(http://imagizer.imageshack.us/v2/1280x1024q90/633/iqc2ja.jpg);
+  background-size: cover;
+  text-align:center;
+  line-height: 500px;
+  vertical-align:middle; 
+}
+#wrapper{
+	min-width:1000px;
+	
+}
+
+#name{
+     font: 100 1.5em/1 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+    margin:auto;
+    margin-top: 200px;
+    padding-bottom: 40px;
+    z-value: -1;
+  
+}
+
+#circle1{
+  width: 50px;
+  height: 50px;
+  background:linear-gradient(to right, #A8A8A8 , #585858 );
+  border-radius: 100%;
+  text-align:center;
+  margin: -50px;
+}
+#BBox{
+  height: 150px;
+  width: 100%;
+  background-color: #585858;
+  margin-top: 25px;
+  position:absolute;
+  clear: left;
+}
+
+.icon{
+ 
+  width: 100px;
+  height: 100px;
+  background-size:cover;
+  border-radius: 100%;
+  display: inline-block;
+  margin-top: 100px;
+  text-align:center;
+  font:100 1em/1 'Raleway', sans-serif;
+  color: white;
+  vertical-align:middle;
+  line-height: 100px;
+  margin: 10px;
+  background-color:black;
+  position: relative;
+}
+
+.icon:hover{
+  background-color: gray;
+}
+
+a:link { color: white; text-decoration: none;}
+a:visited { color:white; text-decoration: none;}
+a:hover { text-decoration: none;}
+a:active { text-decoration: none;}
+#border{
+  height=100%;
+  width=100%;
+  border-style: solid;
+  padding: 150px;
+  margin: 20px;
+  text-align:center;
+}
+
+p{
+  margin-top: 100px;
+  padding-top: 50px;
+  color: black; font-family: 'Droid Sans', sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0 0 14px;
+}
+#wesley{
+  margin-top:-45px;
+}
+</style>
+<head></head>
+<div id="wrapper">
+<body>
+
         <div id="name">
-           Jonathan
+           Jonathan Witten
         </div>
-    <div class="icon">Education</div>
-    <div class="icon">Experience</div>
-    <div class="icon">Skills</div>
-    <div class="icon">Leadership</div>
-    <div class="icon">Projects</div>
-    <div class="icon">About</div>
-     <div id="name">Witten</div>
-  </div>
-  </div></body>
+    <a href="education.html"><div class="icon">Education</div></a>
+    <a href="experience.html"><div class="icon">Experience</div></a>
+    <a href="skills.html"><div class="icon">Skills</div></a>
+    <a href="leadership.html"><div class="icon">Leadership</div></a>
+    <a href= "Projects.html"><div class="icon">Projects</div></a>
+    <a href="about.html"><div class="icon">About</div></a>
+</div>
+</body>
 </html>
